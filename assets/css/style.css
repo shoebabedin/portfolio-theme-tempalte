@@ -1480,6 +1480,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
+  padding: 10px;
 }
 .blog_details .comments form button {
   background-color: transparent;
@@ -1491,7 +1492,9 @@ body {
   line-height: 24px;
   color: #ffffff;
 }
-
+.mob-commenting-img {
+  display: none;
+}
 /* blog details */
 
 /* contact */
@@ -2253,7 +2256,6 @@ body {
   }
   .portfolio .view-all-btn {
     text-align: center;
-    /* margin-top: 40px; */
   }
   /* portfolio */
 
@@ -2507,6 +2509,9 @@ body {
     line-height: 21px;
     color: #ffffff;
   }
+  .mob-commenting-img {
+    display: block;
+  }
   /* blog details */
 
   /* contact page */
@@ -2608,6 +2613,3 @@ body {
   /* 404 page */
 }
 /* responsive */
-.bg-business-color {
-  color: #fff;
-}
