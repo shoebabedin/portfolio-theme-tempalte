@@ -126,7 +126,7 @@
                 <span
                   class="typewrite"
                   data-period="2000"
-                  data-type='[ "Richard Brian", "Richard Brian", "Richard Brian", "Richard Brian" ]'
+                  data-type='[ "Richard Brian - Mobile App Designer", "Richard Brian - User Architecture", "Richard Brian - Web App Designer", "Richard Brian - Wireframe Design" , "Richard Brian - Web Developer" ]'
                 ></span>
               </h4>
               <p>
@@ -180,7 +180,7 @@
                   Web Development
                 </li>
               </ul>
-              <button>
+              <button type="button" class="btn btn-danger" id="basicToastBtn">
                 <span>
                   <svg
                     width="16"
@@ -218,6 +218,28 @@
           </div>
         </div>
       </section>
+
+      <!-- toast -->
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div
+          id="basicToast"
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="d-flex">
+            <div class="toast-body">Downloading</div>
+            <button
+              type="button"
+              class="btn-close me-2 m-auto"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <!-- toast -->
       <!-- about_hero -->
 
       <!-- experince -->
@@ -867,5 +889,11 @@
     <script src="http://github.hubspot.com/odometer/odometer.js"></script>
     <script src="./../assets/js/type.js"></script>
     <script src="./../assets/js/main.js"></script>
+
+    <script>
+      document.querySelector("#basicToastBtn").onclick = function () {
+        new bootstrap.Toast(document.querySelector("#basicToast")).show();
+      };
+    </script>
   </body>
 </html>

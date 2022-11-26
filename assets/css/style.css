@@ -108,6 +108,12 @@ body {
   --fontSize: 15.5px;
   --transition: 0.5s;
 }
+
+/* toast */
+.toast {
+  z-index: 99999;
+}
+/* toast */
 /* common css */
 
 /* preloader */
@@ -1090,7 +1096,8 @@ body {
 }
 .about_hero h4 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
+  /* font-size: 40px; */
   line-height: 60px;
   text-align: left;
   color: #ffffff;
