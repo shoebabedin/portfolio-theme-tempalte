@@ -2272,6 +2272,43 @@ body {
   }
   /* portfolio */
 
+  /* portfolio modal */
+  .modal-body .grid-img {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .modal-body .grid-img img {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .modal-body .grid-img img:first-child {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .project-content .proejct-title {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .project-content .proejct-title .title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .project-content .proejct-title .date {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+  }
+  .project-content .content p {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 1);
+  }
+  .modal-footer {
+    padding: 12px 0px;
+  }
+  /* portfolio modal */
+
   /* testimonial */
   .testimonial {
     padding-top: 21px;
