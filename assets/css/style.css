@@ -1060,13 +1060,18 @@ body {
   line-height: 75px;
   color: #ffffff;
 }
-.about_me h5 {
+.about_me .breadcrumb {
+  justify-content: center;
+}
+.about_me .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+.about_me .breadcrumb .breadcrumb-item a {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #fafafa;
 }
-
 /* about_me */
 
 /* about_hero */
@@ -1432,8 +1437,16 @@ body {
   line-height: 21px;
   color: #ffffff;
   margin-right: 12px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
 }
-
+.blog_details .content .tags a:hover {
+  background: #c00f46;
+  transition: all linear 0.3s;
+}
 .blog_details .comments {
   padding: 24px 0px;
 }
@@ -1599,7 +1612,7 @@ body {
 .footer ul {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   gap: 16px;
 }
 .footer ul li {

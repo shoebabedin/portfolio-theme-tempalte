@@ -161,6 +161,7 @@ rev.on('init', function(event, slick, currentSlide) {
 });
 
 rev.slick({
+  autoplay: true,
   speed: 1000,
   arrows: false,
   dots: true,
@@ -178,6 +179,7 @@ rev.slick({
     return '';
   },
   /*infinite: false,*/
+  
 });
 //  3d slider
 
