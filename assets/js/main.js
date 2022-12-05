@@ -149,8 +149,6 @@ rev.on('init', function(event, slick, currentSlide) {
   slick.$next.next().removeClass('slick-snext2');
   next = cur.next(),  
   prev = cur.prev();
-  //prev2.prev().prev();
-  //next2.next().next();
   prev.addClass('slick-sprev');
   next.addClass('slick-snext');
   prev.prev().addClass('slick-sprev2');

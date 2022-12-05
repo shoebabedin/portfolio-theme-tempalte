@@ -895,7 +895,7 @@ body {
 }
 .testimonial .testimnial_slider .slider_item .testimonial_item .title {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 12px;
 }
