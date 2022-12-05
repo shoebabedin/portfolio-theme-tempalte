@@ -33,6 +33,7 @@
     <title>Portfolio Template</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/css/hamburger.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -69,7 +70,13 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="">
+              <div class="hamburger-icon" id="icon">
+                <div class="icon-1" id="a"></div>
+                <div class="icon-2" id="b"></div>
+                <div class="icon-3" id="c"></div>
+                <div class="clear"></div>
+              </div>
+              <!-- <span class="humbarger">
                 <svg
                   width="41"
                   height="35"
@@ -86,6 +93,30 @@
                   />
                 </svg>
               </span>
+              <span class="close">
+                <svg
+                  width="40"
+                  height="34"
+                  viewBox="0 0 40 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.25 7.4375L8.75 26.5625"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M31.25 26.5625L8.75 7.4375"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span> -->
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -1126,6 +1157,7 @@
     <script src="./assets/js/preloader.js"></script>
     <script src="./assets/js/counterup.min.js"></script>
     <script src="./assets/js/count-up.js"></script>
+    <script src="./assets/js/hamburger.js"></script>
     <script src="./assets/js/main.js"></script>
 
     <script>
