@@ -816,6 +816,7 @@ body {
   grid-template-columns: repeat(3, minmax(30%, 1fr));
   margin-bottom: 16px;
   grid-template-rows: 50% 50%;
+  overflow-y: hidden;
 }
 .modal-body .grid-img img:first-child {
   grid-column: span 2;
