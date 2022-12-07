@@ -1035,6 +1035,7 @@ body {
   box-shadow: -10px -10px 19px #262a2e, 10px 10px 19px #1c1e22;
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 24px;
 }
 .blogs .slider_items .content {
   border-top: 7px solid #c00f46;
