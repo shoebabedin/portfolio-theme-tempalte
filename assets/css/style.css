@@ -1682,6 +1682,19 @@ body {
 /* 404 page */
 
 /* responsive */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .about .img .about-contact {
+    right: -3%;
+    transform: translate(3%, 0%);
+  }
+}
+@media (min-width: 1026px) and (max-width: 1199px) {
+  .about .img .about-contact {
+    right: -3%;
+    transform: translate(3%, 0%);
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1025px) {
   /* navbar */
   .navbar .navbar-collapse ul li a {
