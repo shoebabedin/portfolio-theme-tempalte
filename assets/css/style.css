@@ -347,9 +347,14 @@ body {
   backdrop-filter: blur(10px);
 }
 .navbar .navbar-collapse ul {
-  text-align: center;
+  /* text-align: center;
   padding-top: 200px;
-  padding-bottom: 181px;
+  padding-bottom: 181px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
 }
 .navbar .navbar-collapse ul li a {
   font-weight: 500;
@@ -379,7 +384,7 @@ body {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 10%;
+  width: calc(100% - 0px);
   height: 2px;
   background-color: #c00f46;
   -webkit-transform: translateX(-50%);
