@@ -712,41 +712,40 @@ body {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-
-.portfolio .col-lg-3 .img .overlay p {
-  color: transparent;
+.portfolio .col-lg-3 .img .overlay div {
   overflow: hidden;
   position: absolute;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
   text-align: center;
-  color: #ffffff;
-  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 13px;
   opacity: 0;
   top: 50%;
-  right: 0%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  -o-transform: translate(-50%, -50%) !important;
   z-index: 2;
   transition: all linear 0.5s;
   -webkit-transition: all linear 0.5s;
   -moz-transition: all linear 0.5s;
   -ms-transition: all linear 0.5s;
   -o-transition: all linear 0.5s;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  padding: 8px 13px;
 }
-.portfolio .col-lg-3:hover .img .overlay p {
-  color: #fff;
+.portfolio .col-lg-3:hover .img .overlay div {
   opacity: 1;
 }
-.portfolio .col-lg-3 .img .overlay p::before {
+.portfolio .col-lg-3 .img .overlay div::before {
   content: "";
   background: #c00f46;
   position: absolute;
+
+  width: 100%;
   width: 100%;
   bottom: 0;
   transition: all linear 0.5s;
@@ -758,10 +757,48 @@ body {
   top: 0;
   right: auto;
 }
-.portfolio .col-lg-3:hover .img .overlay p::before {
+.portfolio .col-lg-3:hover .img .overlay div::before {
   left: -100%;
 }
-
+.portfolio .col-lg-3 .img .overlay p {
+  color: transparent;
+  /* overflow: hidden; */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0px;
+  text-align: center;
+  z-index: 2;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -ms-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+}
+.portfolio .col-lg-3:hover .img .overlay p {
+  color: #fff;
+  opacity: 1;
+}
+.portfolio .col-lg-3 .img .overlay button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  background: #d3114d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 0px;
+  padding: 6px 13px;
+}
+.portfolio .col-lg-3 .img .overlay button {
+}
+.portfolio .col-lg-3 .img .overlay button {
+}
+.portfolio .col-lg-3 .img .overlay button {
+}
 .portfolio .view-all {
   background-color: transparent;
   border: 0.5px solid #ffffff;
