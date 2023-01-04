@@ -713,6 +713,7 @@ body {
   transition: all 0.8s;
 }
 .portfolio .col-lg-3 .img .overlay div {
+  width: max-content;
   overflow: hidden;
   position: absolute;
   text-align: center;
